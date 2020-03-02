@@ -1,49 +1,16 @@
-.function-container {
-    display: flex;
-    flex-direction: row;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
-    width: 250vw;
+html {
+    font-family: 'Source Sans Pro' ;
 }
 
-.slider-div {
+.index-menu {
     display: flex;
     flex-direction: column;
-
-    width: 20vw
 }
 
-.slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 15px;
-    border-radius: 5px;  
-    background: #d3d3d3;
-    outline: none;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-}
-  
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    position: relative;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%; 
-    background: #4CAF50;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.range-filler {
+.home-link {
+    margin: auto;
     display: flex;
-    position: absolute;
-    height: 15px;
-    border-radius: 5px;
-
-    width: 10vw;
-
-    background-color: #51ff00;
-    margin: 2px;
-
+    width: 70px;
 }

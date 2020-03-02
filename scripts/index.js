@@ -1,11 +1,11 @@
 const timeDate = function updateTimeAndDate() {
-    // get current time
+    // Get current time
     let currentTime = new Date().toLocaleString();
 
-    // set the content in the page
+    // Set the content in the page
     document.getElementById('time').innerHTML = currentTime;
 
-    // call the function every 1000ms
+    // Call the function every 1000ms
     setTimeout(timeDate);
 };
 

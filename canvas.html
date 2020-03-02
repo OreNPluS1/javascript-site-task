@@ -3,8 +3,9 @@
     <head>
         <title>Canvas code example</title>
         <link rel="stylesheet" href="styles/style.css">
-        <script type="text/javascript" src="scripts/math.js"></script>
+        <link rel="stylesheet" href="styles/canvas.css">
         <script type="text/javascript" src="scripts/slider.js" defer></script>
+        <script type="text/javascript" src="scripts/math.js" defer></script>
     </head>
     <body onload="draw()">
         <div class="function-container">
@@ -15,15 +16,15 @@
                     <div id="rangeFiller" class="range-filler"></div>
                 </div>
 
-                <label for="slider2">Wave Height <span class="slider-value"></span></label>
+                <label for="slider2">Wave Height: <span class="slider-value"></span></label>
                 <div class="slider-div" id="slider2">
                     <input type="range" min="1" max="100" value="50" class="slider">
                     <div id="rangeFiller" class="range-filler"></div>
                 </div>
 
-                <label for="slider3">Amount of waves <span class="slider-value"></span></label>
+                <label for="slider3">Wave frequency: <span class="slider-value"></span></label>
                 <div class="slider-div" id="slider3">
-                    <input type="range" min="1" max="100" value="50" class="slider">
+                    <input type="range" min="1" max="500" value="250" class="slider">
                     <div id="rangeFiller" class="range-filler"></div>
                 </div>
             </div>
@@ -32,6 +33,6 @@
                 <canvas id="canvas" width="502" height="150"></canvas>
             </div>
         </div>
-        <a href="index.html">Go home</a>
+        <a href="index.html" class="home-link">Go home</a>
     </body>
 </html>
