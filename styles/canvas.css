@@ -1,3 +1,4 @@
+/* settings for the function container */
 .function-container {
     display: flex;
     flex-direction: row;
@@ -7,6 +8,7 @@
     margin: auto;
 }
 
+/* styling for the sliders */
 .sliders-container {
     margin-right: 2vw;
 }
