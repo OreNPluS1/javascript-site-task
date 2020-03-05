@@ -7,7 +7,7 @@ let canvas = document.getElementById("canvas");
 let canvasContext = canvas.getContext("2d");
 
 // Main canvas drawer function
-function draw() {
+const draw = function functiondrawer() {
     // Clear the canvas first
     canvasContext.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -33,7 +33,7 @@ function draw() {
     functionGraph(canvasContext, axes, propertis, "rgb(11,153,11)", 1); // Draw the function
 };
 
-function functionGraph (canvasContext, axes, propertis, color, thick) {
+const functionGraph = function functionCalculator (canvasContext, axes, propertis, color, thick) {
     // Set function values
     let x = 1;
     let y = 1;
@@ -72,7 +72,7 @@ function functionGraph (canvasContext, axes, propertis, color, thick) {
     canvasContext.stroke();
 };
 
-function showAxes(canvasContext, axes) {
+const showAxes = function makeAxes(canvasContext, axes) {
     let x0 = axes.x0;
     let width = canvasContext.canvas.width;
 
