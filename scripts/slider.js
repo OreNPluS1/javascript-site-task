@@ -10,7 +10,7 @@ try {
     slidersValues[2].innerHTML = sliders[2].value;
 }
 catch (err) {
-    
+
 };
 
 
@@ -25,14 +25,19 @@ catch (err) {
 };
 
 // Update the current slider value (each time you drag the slider handle)
-sliders[0].oninput = function() {
+sliders[0].oninput = function () {
     currentValue = this.value;
     sliderFillers[0].style.width = `${currentValue / (sliders[0].max / 100)}%`;
     slidersValues[0].innerHTML = currentValue;
-    draw();
+    try {
+        draw();
+    }
+    catch (err) {
+
+    };
 };
 
-sliders[1].oninput = function() {
+sliders[1].oninput = function () {
     currentValue = this.value;
     sliderFillers[1].style.width = `${currentValue / (sliders[1].max / 100)}%`;
     slidersValues[1].innerHTML = currentValue;
@@ -40,7 +45,7 @@ sliders[1].oninput = function() {
 };
 
 try {
-    sliders[2].oninput = function() {
+    sliders[2].oninput = function () {
         currentValue = this.value;
         sliderFillers[2].style.width = `${currentValue / (sliders[2].max / 100)}%`;
         slidersValues[2].innerHTML = currentValue;
