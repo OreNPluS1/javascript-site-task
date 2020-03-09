@@ -10,20 +10,20 @@
         <input type="number" min="2" value="2" step="1" onchange="fibonacciCalc()" id="fibonacci-input">
         <p id="current-fibonacci">0, 1</p>
 
-        <label for="slider1">Wave Length: <span class="slider-value"></span></label>
+        <label for="slider1">Triangle size: <span class="slider-value"></span></label>
         <div class="slider-div" id="slider1">
-            <input type="range" min="0" max="10" value="1" class="slider">
+            <input type="range" min="0" max="30" value="25" class="slider" onchange="darwTriangles()">
             <div id="rangeFiller" class="range-filler"></div>
         </div>
         
-        <label for="slider2">Wave Height: <span class="slider-value"></span></label>
+        <label for="slider2">Amount of triangles: <span class="slider-value"></span></label>
         <div class="slider-div" id="slider2">
-            <input type="range" min="1" max="100" value="50" class="slider">
+            <input type="range" min="1" max="242" value="242" class="slider" onchange="darwTriangles()">
             <div id="rangeFiller" class="range-filler"></div>
         </div>
 
         <div class="canvas-container">
-            <canvas id="canvas" width="600" height="600"></canvas>
+            <canvas id="canvas" width="900" height="900"></canvas>
         </div>
     </body>
 </html>

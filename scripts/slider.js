@@ -41,7 +41,12 @@ sliders[1].oninput = function () {
     currentValue = this.value;
     sliderFillers[1].style.width = `${currentValue / (sliders[1].max / 100)}%`;
     slidersValues[1].innerHTML = currentValue;
-    draw();
+    try {
+        draw();
+    }
+    catch (err) {
+
+    };
 };
 
 try {
